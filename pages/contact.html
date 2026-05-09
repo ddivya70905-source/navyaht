@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Contact</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="../index.html">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="theme-toggle" class="theme-toggle-btn">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="py-5 mt-5" id="contact">
+        <div class="container py-5">
+            <div class="row text-center mb-5" data-aos="fade-up">
+                <div class="col">
+                    <h2 class="display-5 fw-bold">Get in <span class="text-primary">Touch</span></h2>
+                    <p class="lead text-muted">I'd love to hear from you. Feel free to reach out.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="glass-panel p-5 h-100">
+                        <h4 class="mb-4 fw-bold">Contact Information</h4>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 50px; height: 50px;">
+                                <i class="bi bi-envelope-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 text-muted">Email</h6>
+                                <a href="mailto:hello@example.com" class="text-decoration-none fw-semibold text-reset">hello@example.com</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 50px; height: 50px;">
+                                <i class="bi bi-geo-alt-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 text-muted">Location</h6>
+                                <p class="mb-0 fw-semibold">San Francisco, CA</p>
+                            </div>
+                        </div>
+
+                        <h4 class="mt-5 mb-4 fw-bold">Follow Me</h4>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="btn btn-outline-custom rounded-circle d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; padding: 0;">
+                                <i class="bi bi-linkedin fs-5"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-custom rounded-circle d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; padding: 0;">
+                                <i class="bi bi-github fs-5"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-custom rounded-circle d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; padding: 0;">
+                                <i class="bi bi-twitter-x fs-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="glass-panel p-5">
+                        <form id="contactForm">
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label for="name" class="form-label fw-semibold">Your Name</label>
+                                    <input type="text" class="form-control form-control-lg bg-transparent" id="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label fw-semibold">Your Email</label>
+                                    <input type="email" class="form-control form-control-lg bg-transparent" id="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label fw-semibold">Subject</label>
+                                <input type="text" class="form-control form-control-lg bg-transparent" id="subject" placeholder="Job Opportunity" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label fw-semibold">Message</label>
+                                <textarea class="form-control form-control-lg bg-transparent" id="message" rows="5" placeholder="Your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-custom btn-lg w-100">Send Message <i class="bi bi-send ms-2"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! This is a demo form.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
